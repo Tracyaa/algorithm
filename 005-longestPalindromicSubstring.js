@@ -22,9 +22,15 @@ var longestPalindrome = function(s) {
              }
        }
      }
-     console.log(obj)
+    console.log(obj)
      
-     const lastKey = Object.keys(obj).length - 1
-     
-     return obj[lastKey]
+    const objArr = Object.keys(obj)
+    const lastKey = objArr[objArr.length - 1]
+    
+    // if there's no palindrom 
+    if (!objArr) {
+        return ""
+    }
+    
+    return obj[lastKey]
 };
