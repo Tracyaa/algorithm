@@ -2,6 +2,13 @@
 // You may assume that the maximum length of s is 1000.
 
 var longestPalindrome = function(s) {
+    // for edge cases 
+    if (s.length < 1) {
+        return ""
+    } else if (s.length === 1) {
+        return s
+    }
+
      // use obj to do word count 
      let obj = {}; 
      let arr = s.split("")
