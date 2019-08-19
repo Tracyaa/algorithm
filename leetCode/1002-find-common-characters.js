@@ -4,7 +4,6 @@ For example, if a character occurs 3 times in all strings but not 4 times,
 you need to include that character three times in the final answer.
 */
 var commonChars = function(A) {
-
-
-
+    let obj = {};
+    let arr = [];
 };
