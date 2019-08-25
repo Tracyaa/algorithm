@@ -13,6 +13,9 @@ var sumOfLeftLeaves = function(root) {
     let sum = 0
     
     function sumLeft(node) {
+        if (!node) {
+            return;
+        }
         
     };
     
