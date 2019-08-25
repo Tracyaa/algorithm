@@ -13,20 +13,10 @@ var sumOfLeftLeaves = function(root) {
     let sum = 0
     
     function sumLeft(node) {
-        if (!node) {
-            return;
-        }
         
-        sumLeft(node.right);  
-        
-        if (node.left && !node.left.left && !node.left.right) {
-            sum += node.left.val;
-        }
-        
-        sumLeft(node.left);
     };
     
-    sumLeft(root);
+
     
     return sum;
 };
