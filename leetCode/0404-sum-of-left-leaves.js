@@ -17,6 +17,13 @@ var sumOfLeftLeaves = function(root) {
             return;
         }
         
+        sumLeft(node.right);  
+        
+        if (node.left && !node.left.left && !node.left.right) {
+            sum += node.left.val;
+        }
+        
+        sumLeft(node.left);
     };
     
 
