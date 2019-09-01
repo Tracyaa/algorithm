@@ -20,6 +20,11 @@ var generate = function(numRows) {
         return newArr;
     };
 
+    // now we can build up our Pascal's Triangle
+    for (let i = 1; i < numRows - 1; i++) {
+        arr.push(nextRow(arr[i]));
+    }
+    
 
     return arr;
 };
