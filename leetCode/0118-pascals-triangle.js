@@ -25,6 +25,8 @@ var generate = function(numRows) {
         arr.push(nextRow(arr[i]));
     }
     
-
-    return arr;
+    // we can't just return arr, there are some edge cases that'll create the errors
+    // if the inputs are 0 and 1 it would retrun [[1], [1, 1]] 
+    // slicing the arr will solve the edge cases 
+    return arr.slice(0, numRows);
 };
