@@ -3,5 +3,12 @@
 // In Pascal's triangle, each number is the sum of the two numbers directly above it.
 
 var generate = function(numRows) {
-    
+    // we need the base and it will be able to build up
+    let arr = [[1], [1, 1]];
+
+    function nextRwo(nums) {
+
+    }
+
+    return arr;
 };
