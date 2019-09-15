@@ -30,3 +30,5 @@ var generate = function(numRows) {
     // slicing the arr will solve the edge cases 
     return arr.slice(0, numRows);
 };
+
+
